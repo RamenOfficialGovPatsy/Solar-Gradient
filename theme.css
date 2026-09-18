@@ -1,0 +1,648 @@
+/* ===== FONTS ===== */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Bebas+Neue&family=Playfair+Display:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* ===== DARK THEME (Warm Evening) ===== */
+.theme-dark {
+  /* Backgrounds */
+  --background-primary: #1e1a17;
+  --background-primary-alt: #26211d;
+  --background-secondary: #26211d;
+  --background-secondary-alt: #2e2823;
+  --background-modifier-border: #3a332c;
+  --background-modifier-form-field: #26211d;
+  --background-modifier-form-field-highlighted: #2e2823;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+  --background-modifier-success: #5aafc8;
+  --background-modifier-error: #d4874c;
+  --background-modifier-error-hover: #e8975c;
+  --background-modifier-hover: rgba(255, 255, 255, 0.06);
+
+  /* Text */
+  --text-normal: #f5e8dc;
+  --text-muted: #b8a898;
+  --text-faint: #8a7a6b;
+  --text-accent: #ff8a5c;
+  --text-accent-hover: #ffa94d;
+  --text-on-accent: #1e1a17;
+  --text-error: #d4874c;
+  --text-warning: #ffa94d;
+  --text-selection: rgba(255, 138, 92, 0.3);
+  --text-highlight-bg: rgba(255, 169, 77, 0.25);
+
+  /* Interface */
+  --interactive-normal: #26211d;
+  --interactive-hover: #2e2823;
+  --interactive-accent: #ff8a5c;
+  --interactive-accent-hover: #ffa94d;
+  --interactive-accent-rgb: 255, 138, 92;
+
+  /* Scrollbar */
+  --scrollbar-bg: #26211d;
+  --scrollbar-thumb-bg: #ff8a5c;
+  --scrollbar-active-thumb-bg: #ffa94d;
+
+  /* Graph */
+  --graph-line-color: #3a332c;
+  --graph-node-color: #ff8a5c;
+  --graph-node-tag-color: #ffa94d;
+  --graph-node-attachment-color: #5aafc8;
+  --graph-node-unresolved-color: #3a332c;
+
+  /* Headings — sunset gradient */
+  --h1-color: #ff8a5c;
+  --h2-color: #ffa94d;
+  --h3-color: #ffc078;
+  --h4-color: #e8a598;
+  --h5-color: #b88fb8;
+  --h6-color: #8a7aa8;
+  --h1-size: 2em;
+  --h2-size: 1.6em;
+  --h3-size: 1.35em;
+  --h4-size: 1.15em;
+  --h5-size: 1.05em;
+  --h6-size: 1em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  /* Solar Gradient custom colors */
+  --solar-sun: #ff8a5c;
+  --solar-gold: #ffa94d;
+  --solar-amber: #ffc078;
+  --solar-coral: #e8a598;
+  --solar-lilac: #b88fb8;
+  --solar-dusk: #8a7aa8;
+  --solar-sea: #5aafc8;
+  --solar-cream: #f5e8dc;
+}
+
+/* ===== LIGHT THEME (Sunny Day) ===== */
+.theme-light {
+  /* Backgrounds */
+  --background-primary: #fff8f0;
+  --background-primary-alt: #fff0e0;
+  --background-secondary: #fff0e0;
+  --background-secondary-alt: #ffe8d4;
+  --background-modifier-border: #e8d4c0;
+  --background-modifier-form-field: #fff8f0;
+  --background-modifier-form-field-highlighted: #fff0e0;
+  --background-modifier-box-shadow: rgba(80, 60, 40, 0.08);
+  --background-modifier-success: #4a9eb8;
+  --background-modifier-error: #d4874c;
+  --background-modifier-error-hover: #e8975c;
+  --background-modifier-hover: rgba(180, 120, 80, 0.08);
+
+  /* Text */
+  --text-normal: #3a2e28;
+  --text-muted: #6a5a4a;
+  --text-faint: #9a8a7a;
+  --text-accent: #ff6b35;
+  --text-accent-hover: #e8571e;
+  --text-on-accent: #fff8f0;
+  --text-error: #d4874c;
+  --text-warning: #f7931e;
+  --text-selection: rgba(255, 107, 53, 0.2);
+  --text-highlight-bg: rgba(247, 147, 30, 0.2);
+
+  /* Interface */
+  --interactive-normal: #ffe8d4;
+  --interactive-hover: #ffdcc0;
+  --interactive-accent: #ff6b35;
+  --interactive-accent-hover: #e8571e;
+  --interactive-accent-rgb: 255, 107, 53;
+
+  /* Scrollbar */
+  --scrollbar-bg: #fff0e0;
+  --scrollbar-thumb-bg: #ff6b35;
+  --scrollbar-active-thumb-bg: #e8571e;
+
+  /* Graph */
+  --graph-line-color: #e8d4c0;
+  --graph-node-color: #ff6b35;
+  --graph-node-tag-color: #f7931e;
+  --graph-node-attachment-color: #4a9eb8;
+  --graph-node-unresolved-color: #e8d4c0;
+
+  /* Headings — sunset gradient (light theme) */
+  --h1-color: #ff6b35;
+  --h2-color: #f7931e;
+  --h3-color: #ffb347;
+  --h4-color: #e89b7c;
+  --h5-color: #b07aa8;
+  --h6-color: #7a6a9a;
+  --h1-size: 2em;
+  --h2-size: 1.6em;
+  --h3-size: 1.35em;
+  --h4-size: 1.15em;
+  --h5-size: 1.05em;
+  --h6-size: 1em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  /* Solar Gradient custom colors (light version) */
+  --solar-sun: #ff6b35;
+  --solar-gold: #f7931e;
+  --solar-amber: #ffb347;
+  --solar-coral: #e89b7c;
+  --solar-lilac: #b07aa8;
+  --solar-dusk: #7a6a9a;
+  --solar-sea: #4a9eb8;
+  --solar-cream: #3a2e28;
+}
+
+/* ===== HARDCODED ACCENT COLORS ===== */
+.theme-dark,
+.theme-light {
+  --interactive-accent: #ff6b35;
+  --interactive-accent-hover: #e8571e;
+  --interactive-accent-rgb: 255, 107, 53;
+  --text-accent: #ff6b35;
+  --text-accent-hover: #e8571e;
+  --graph-node-color: #ff6b35;
+  --graph-node-tag-color: #f7931e;
+  --graph-node-attachment-color: #4a9eb8;
+  --scrollbar-thumb-bg: #ff6b35;
+  --scrollbar-active-thumb-bg: #e8571e;
+  --button-bg-color: #ff6b35;
+  --button-text-color: #fff8f0;
+  --button-hover-bg-color: #e8571e;
+  --button-hover-text-color: #fff8f0;
+  --tab-outline-color: #ff6b35;
+}
+
+/* ===== GENERAL STYLES ===== */
+body {
+  font-family:
+    "Rubik",
+    -apple-system,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+/* ===== HEADINGS (Bebas Neue) ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.4em;
+  color: var(--h1-color);
+  border-bottom: 2px solid var(--h1-color);
+  padding-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: var(--h2-color);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.15em;
+}
+
+h3 {
+  font-size: 1.55em;
+  color: var(--h3-color);
+}
+h4 {
+  font-size: 1.3em;
+  color: var(--h4-color);
+}
+h5 {
+  font-size: 1.15em;
+  color: var(--h5-color);
+}
+h6 {
+  font-size: 1.05em;
+  color: var(--h6-color);
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+strong {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+em {
+  color: var(--solar-coral);
+}
+
+/* ===== HIGHLIGHT ===== */
+mark,
+.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: var(--text-selection);
+  color: var(--text-on-accent);
+}
+
+/* ===== BLOCKQUOTES (Playfair Display) ===== */
+blockquote {
+  background-color: var(--background-primary-alt);
+  border-left: 4px solid var(--solar-gold);
+  padding: 0.8em 1.2em;
+  margin: 1em 0;
+  color: var(--text-muted);
+  border-radius: 0 4px 4px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0.3em 0;
+}
+
+/* ===== CODE ===== */
+code,
+.cm-inline-code {
+  font-family: "JetBrains Mono", "Source Code Pro", monospace;
+  font-size: 0.9em;
+  color: var(--text-accent);
+  background-color: var(--background-modifier-border);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+pre code {
+  background-color: transparent;
+  color: var(--text-normal);
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ===== TABLES ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+thead {
+  background-color: var(--background-secondary);
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+th {
+  color: var(--text-accent);
+  font-weight: 600;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+}
+
+td {
+  padding: 0.5em 0.8em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+tr:hover {
+  background-color: var(--background-secondary-alt);
+}
+
+/* ===== TABS ===== */
+.workspace-tab-header {
+  background-color: transparent;
+}
+
+.workspace-tab-header-inner {
+  color: var(--text-muted);
+  background-color: var(--background-secondary);
+  font-family: "Rubik", sans-serif;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--background-secondary-alt);
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  color: var(--text-accent);
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+.workspace-tab-header:hover .workspace-tab-header-inner {
+  color: var(--text-normal);
+}
+
+/* ===== SIDEBAR ===== */
+.workspace-leaf {
+  background-color: var(--background-secondary);
+}
+
+.workspace-leaf-content .nav-header {
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-family: "Rubik", sans-serif;
+}
+
+.nav-file-title.is-active {
+  background-color: var(--background-secondary-alt);
+  border-left: 3px solid var(--interactive-accent);
+}
+
+.nav-file-title:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.nav-folder-title:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.nav-file-title,
+.nav-folder-title {
+  font-family: "Rubik", sans-serif;
+}
+
+/* ===== GRAPH ===== */
+.graph-view.color-fill {
+  color: var(--graph-node-color);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag-color);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment-color);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved-color);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line-color);
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-line-color);
+}
+
+.graph-view.color-text {
+  color: var(--text-normal);
+}
+
+.graph-view.color-circle {
+  color: var(--graph-node-color);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: var(--interactive-accent);
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* ===== CHECKBOXES ===== */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: var(--background-primary);
+  border: 2px solid var(--background-modifier-border);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 6px;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-on-accent);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ===== COLLAPSIBLE BLOCKS ===== */
+details {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  margin: 0.8em 0;
+}
+
+summary {
+  color: var(--text-accent);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-left: 1.5em;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "☀️ ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.9em;
+}
+
+details[open] summary::before {
+  content: "🌅 ";
+}
+
+details summary:hover {
+  color: var(--text-accent-hover);
+}
+
+/* ===== DIVIDERS ===== */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--solar-sun),
+    var(--solar-gold),
+    var(--solar-amber),
+    var(--solar-coral),
+    var(--solar-lilac),
+    transparent
+  );
+  margin: 2em 0;
+}
+
+/* ===== BUTTONS ===== */
+button,
+.mod-cta {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 0.4em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.2s ease;
+}
+
+button:hover,
+.mod-cta:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 12px rgba(255, 107, 53, 0.4);
+}
+
+/* Settings */
+.vertical-tab-nav-item.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+.vertical-tab-nav-item.is-active:hover {
+  background-color: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--interactive-accent);
+}
+
+.checkbox-container.is-enabled:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.flair.mod-pop {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+/* ===== LISTS ===== */
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+ul li::marker {
+  color: var(--interactive-accent);
+}
+
+ol li::marker {
+  color: var(--solar-gold);
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ===== STATUS BAR ===== */
+.status-bar {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-family: "Rubik", sans-serif;
+}
+
+.status-bar-item {
+  color: var(--text-muted);
+}
+
+.status-bar-item:hover {
+  color: var(--text-normal);
+}
+
+/* ===== SEARCH ===== */
+.search-result-file-match {
+  background-color: var(--text-highlight-bg);
+}
+
+.search-result-file-matched-text {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+/* ===== INTERFACE FONT (Rubik) ===== */
+.workspace-ribbon,
+.workspace-tab-header,
+.nav-file-title,
+.nav-folder-title,
+.menu,
+.modal,
+.setting-item,
+.status-bar,
+.prompt,
+.suggestion-item,
+.dropdown,
+input[type="text"],
+input[type="search"],
+textarea {
+  font-family: "Rubik", sans-serif;
+}
