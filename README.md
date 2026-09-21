@@ -53,10 +53,8 @@ An energetic summer theme for [Obsidian](https://obsidian.md) with a bright suns
 
 1. Open Obsidian Settings
 2. Go to **Appearance** → **Themes** → **Manage**
-3. Find Solar Gradient in the community store
+3. [Solar Gradient](https://community.obsidian.md/themes/solar-gradient)
 4. Click **Install** and then **Use**
-
-> **Note:** The theme has been submitted for review to the Obsidian community store and is awaiting moderation ☀️
 
 ### Manual Installation
 
@@ -127,7 +125,6 @@ Have an idea for a new feature or a bright detail you'd love to see in Solar Gra
 You can share your suggestions by:
 
 - 🐛 Opening an [issue on GitHub](https://github.com/RamenOfficialGovPatsy/Solar-Gradient/issues)
-- 💬 Starting a [discussion on GitHub](https://github.com/RamenOfficialGovPatsy/Solar-Gradient/discussions)
 - ✉️ Sending a message through the [Obsidian forum](https://forum.obsidian.md)
 
 Your ideas help make this theme brighter for everyone! ☀️🌅

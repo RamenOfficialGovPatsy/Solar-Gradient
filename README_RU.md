@@ -53,10 +53,8 @@
 
 1. Открой настройки Obsidian
 2. Перейди в **Оформление** → **Темы** → **Управление**
-3. Найди Solar Gradient в магазине сообщества
+3. [Solar Gradient](https://community.obsidian.md/themes/solar-gradient)
 4. Нажми **Установить**, затем **Применить**
-
-> **Примечание:** Тема отправлена на проверку в магазин тем Obsidian и ожидает модерации ☀️
 
 ### Ручная установка
 
@@ -127,7 +125,6 @@
 Ты можешь поделиться предложением через:
 
 - 🐛 [Создать issue на GitHub](https://github.com/RamenOfficialGovPatsy/Solar-Gradient/issues)
-- 💬 [Начать обсуждение на GitHub](https://github.com/RamenOfficialGovPatsy/Solar-Gradient/discussions)
 - ✉️ Написать сообщение на [форуме Obsidian](https://forum.obsidian.md)
 
 Твои идеи помогают сделать тему ярче для всех! ☀️🌅
